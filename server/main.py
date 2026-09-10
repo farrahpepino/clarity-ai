@@ -77,7 +77,6 @@ def simplify(text):
         COMPANY
         [company name exactly as stated in the job description, or Not stated. This should be in uppercase.]
         
-        JOB TITLE
         [job title]
 
         THE JOB IN ONE SENTENCE
@@ -206,6 +205,10 @@ async def export_pdf(data: dict):
             continue
 
         line = line.replace("**", "")
+        line = line.replace("■", "-")
+        line = line.replace("–", "-")
+        line = line.replace("—", "-")
+        line = line.replace("-", "-")
 
         if line.upper() in sections:
             story.append(
