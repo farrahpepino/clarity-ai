@@ -3,7 +3,7 @@ const Output = ({text}: any) => {
 
     const handleExport = async () => {
         try {
-          const response = await fetch("https://server-livid-delta-83.vercel.app/export-pdf", {
+          const response = await fetch("https://clarity-ai-backend-seven.vercel.app/export-pdf", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

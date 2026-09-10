@@ -17,7 +17,7 @@ const Hero = ({ onResult }: any) => {
     formData.append("file", file);
 
     try {
-      const response = await fetch("https://server-livid-delta-83.vercel.app/simplify", {
+      const response = await fetch("https://clarity-ai-backend-seven.vercel.app/simplify", {
         method: "POST",
         body: formData,
       });
