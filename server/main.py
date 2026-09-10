@@ -71,6 +71,7 @@ def simplify(text):
         - Separate actual requirements from "nice to have" qualifications.
         - Clearly identify anything that sounds optional.
         - If the posting is vague about something important, say so.
+        
 
         FORMAT:
 
@@ -118,6 +119,7 @@ def simplify(text):
         - Do not use # headings.
         - Use the section names exactly as provided.
         - Use "-" for bullet points.
+        - Do not use "■" for "-".
 
         JOB DESCRIPTION:
 
