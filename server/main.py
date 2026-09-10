@@ -130,7 +130,8 @@ def simplify(text):
     response = llm.invoke(prompt)
 
     cleaned = response.content
-    cleaned = cleaned.replace("■", "-")
+    cleaned = cleaned.replace("■", "-").replace("–", "-").replace("—", "-")
+
 
     return cleaned
 
