@@ -79,7 +79,6 @@ def simplify(text):
         
         [job title]
 
-        THE JOB IN ONE SENTENCE
         [Explain what this person actually does in one simple sentence.]
 
         WHAT YOU'LL ACTUALLY DO
@@ -185,9 +184,6 @@ async def export_pdf(data: dict):
     story = []
 
     sections = [
-        "COMPANY",
-        "JOB TITLE",
-        "THE JOB IN ONE SENTENCE",
         "WHAT YOU'LL ACTUALLY DO",
         "WHAT YOU NEED",
         "NICE TO HAVE",
