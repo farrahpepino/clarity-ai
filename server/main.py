@@ -131,8 +131,6 @@ def simplify(text):
 
     cleaned = response.content
     cleaned = cleaned.replace("■", "-")
-    cleaned = cleaned.replace("–", "-")
-    cleaned = cleaned.replace("—", "-")
 
     return cleaned
 
