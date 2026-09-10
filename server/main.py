@@ -74,7 +74,6 @@ def simplify(text):
 
         FORMAT:
 
-        COMPANY
         [company name exactly as stated in the job description, or Not stated. This should be in uppercase.]
         
         [job title]
