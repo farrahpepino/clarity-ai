@@ -128,7 +128,12 @@ def simplify(text):
 
     response = llm.invoke(prompt)
 
-    return response.content
+    cleaned = response.content
+    cleaned = cleaned.replace("■", "-")
+    cleaned = cleaned.replace("–", "-")
+    cleaned = cleaned.replace("—", "-")
+
+    return cleaned
 
 
 @app.post("/simplify")
@@ -202,10 +207,6 @@ async def export_pdf(data: dict):
             continue
 
         line = line.replace("**", "")
-        line = line.replace("■", "-")
-        line = line.replace("–", "-")
-        line = line.replace("—", "-")
-        line = line.replace("-", "-")
 
         if line.upper() in sections:
             story.append(
