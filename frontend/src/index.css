@@ -1,0 +1,10 @@
+body {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+
+  background-color: #f0f0f0;
+  background-image: radial-gradient(#e5e5e5 1.5px, transparent 1px);
+  background-size: 20px 20px;
+  transition: background-position 1.5s ease-out;
+}
