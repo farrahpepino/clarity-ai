@@ -1,2 +1,7 @@
-langchain langchain-ollama python-docx reportlab fastapi uvicorn python-multipart 
-
+langchain
+langchain-ollama
+python-docx
+reportlab
+fastapi
+uvicorn
+python-multipart
