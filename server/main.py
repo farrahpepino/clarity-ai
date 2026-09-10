@@ -9,7 +9,8 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 
-from langchain_ollama import ChatOllama
+# from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
 
 
 app = FastAPI()
@@ -38,9 +39,14 @@ def extract(file):
 
 def simplify(text):
 
-    llm = ChatOllama(
-        model="llama3.2",
-        temperature=0
+    # llm = ChatOllama(
+    #     model="llama3.2",
+    #     temperature=0
+    # )
+    
+    llm = ChatGroq(
+    model="llama-3.3-70b-versatile",
+    temperature=0
     )
 
     prompt = f"""
