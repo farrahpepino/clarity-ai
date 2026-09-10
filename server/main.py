@@ -119,7 +119,8 @@ def simplify(text):
         - Do not use # headings.
         - Use the section names exactly as provided.
         - Use "-" for bullet points.
-        - Do not use "■" for "-".
+        - Use only the normal ASCII hyphen character "-" for hyphens.
+        - Never use en dashes, em dashes, bullet-like replacement characters, or the character "■".
 
         JOB DESCRIPTION:
 
